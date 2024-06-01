@@ -1,4 +1,4 @@
-//FORMAZIONE_BATTAGLIONI
+//RINALDO_SACRIPANTE_FERRAÙ
 
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
@@ -15,13 +15,13 @@ export function sketch() {
         // lights
         night: false,
         // lance
-        lanceLength: 3 + Math.random() * 1,
-        baseDiam: .05,
+        lanceLength: 2.2 + Math.random() * .05,
+        baseDiam: .06,
         topDiam: 0,
-        numRows: 30,
+        numRows: 1,
         numCols: 3,
-        spacing: .4,
-        spacingVariability: .5,
+        spacing: .5 + Math.random() * 1,
+        spacingVariability: 1 + Math.random() * .5,
         lanceMass: 1,
         // view
         lookAtCenter: new THREE.Vector3(0, 0, 0),
@@ -159,8 +159,7 @@ export function sketch() {
 
     //BLOCKS -- offset = BLOCKS_SPACE
     const blocks = [
-        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(-0.9, 0, 0) },
-        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(0.9, 0, 0) },
+        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(0, 0, 0) },
         ];
 
 

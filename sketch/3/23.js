@@ -15,11 +15,11 @@ export function sketch() {
         // lights
         night: false,
         // lance
-        lanceLength: 3 + Math.random() * 1,
-        baseDiam: .05,
+        lanceLength: 4 + Math.random() * 1,
+        baseDiam: .07,
         topDiam: 0,
-        numRows: 30,
-        numCols: 3,
+        numRows: 7,
+        numCols: 7,
         spacing: .4,
         spacingVariability: .5,
         lanceMass: 1,
@@ -159,8 +159,9 @@ export function sketch() {
 
     //BLOCKS -- offset = BLOCKS_SPACE
     const blocks = [
-        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(-0.9, 0, 0) },
-        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(0.9, 0, 0) },
+        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(-3, 0, 7) },
+        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(0, 0, 2) },
+        { numRows, numCols, spacing, spacingVariability, offset: new THREE.Vector3(3, 0, 7) },
         ];
 
 
